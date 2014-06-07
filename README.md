@@ -18,8 +18,8 @@ Install this plugin with your favorite plugin-manager or manual with the followi
 ## Highlighting Sugar
 Highlighting of meta description in comments with the following pattern:
 
-    '# ~Description: very important text
-    '# ~asdf: important text
+    # ~Description: very important text
+    # ~asdf: important text
 
 
 
