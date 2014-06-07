@@ -9,12 +9,17 @@ Install this plugin with your favorite plugin-manager or manual with the followi
 
 
 ## Filetype Detection
-Must be a **.conf** file.
-The file detection script looks for the pattern:
+*   Must be a **.conf** file.
+*   The file detection script looks for the pattern:
     
-    'pinstance.*==>'
+        'pinstance.*==>'
 
 
 ## Highlighting Sugar
-Highlighting of meta description in comments.
+Highlighting of meta description in comments with the following pattern:
+
+    '# ~Description: very important text
+    '# ~asdf: important text
+
+
 
