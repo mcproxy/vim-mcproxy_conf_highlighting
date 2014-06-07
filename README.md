@@ -9,7 +9,7 @@ Install this plugin with your favorite plugin-manager or manual with the followi
 
 
 ## Filetype Detection
-*   Must be a **.conf** file.
+*   Must be a **.conf** file
 *   The file detection script looks for the pattern:
     
         'pinstance.*==>'
