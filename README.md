@@ -9,8 +9,8 @@ Install this plugin with your favorite plugin-manager or manual with the followi
 
 
 ## Filetype Detection
-*   Must be a **.conf** file
-*   The file detection script looks for the pattern:
+*   It must be a **.conf** file
+*   The file detection script looks for the pattern in the file:
     
         'pinstance.*==>'
 
@@ -19,7 +19,8 @@ Install this plugin with your favorite plugin-manager or manual with the followi
 Highlighting of meta description in comments with the following pattern:
 
     # ~Description: very important text
-    # ~asdf: important text
+    # ~asdf: other important text
+    # ~foo: bar
 
 
 
