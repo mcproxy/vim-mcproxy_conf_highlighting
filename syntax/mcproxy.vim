@@ -14,14 +14,14 @@ syntax match mcString                  '\v[a-zA-Z0-9_]*'
 syntax region mcString start='\v"' skip='\v\\.' end='\v"'
 
 syntax match mcWildcard                '\v\*'
-syntax match mcSpezialChars            '\v\:|\=\=\>|\(|\)|\;|\{|\}|\||\-'
+syntax match mcSpezialChars            '\v\:|\=\=\>|\;|\{|\}|\||\-'
 
 syntax match mcIp6Address              '\v(\x|:){2,39}' contained nextgroup=mcIp6AddressSubmask
 syntax match mcIp6AddressSubmask       '\v/(1[0-2][0-9]|[1-9][0-9]|[1-9])?' contained
 syntax match mcIp4Address              '\v((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)' contained nextgroup=mcIp4AddressSubmask
 syntax match mcIp4AddressSubmask       '\v/((3[0-2])|([1-2]?[0-9]))?' contained
 
-syntax region mcTable start='\v\{' end='\v\}' contains=mcString,mcComment,mcKeyword,mcSpezialChars,mcSpezialChars,mcIp6Address,mcIp4Address,mcWildcard containedin=mcTable
+syntax region mcTable start='\v\(' end='\v\)' contains=mcString,mcComment,mcKeyword,mcSpezialChars,mcSpezialChars,mcIp6Address,mcIp4Address,mcWildcard containedin=mcTable
 
 syntax keyword mcKeyword               disable protocol pinstance table
 syntax keyword mcKeyword               upstream downstream out in 
