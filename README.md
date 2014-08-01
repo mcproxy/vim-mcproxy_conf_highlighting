@@ -22,8 +22,7 @@ Highlighting of meta description in comments with the following pattern:
     # ~foo: bar
 
 ## Interaction with over Vim-Plugins
-*   [Nerdcommenter](https://github.com/scrooloose/nerdcommenter):
-    Add this code snippet to your vimrc file:
+*   [Nerdcommenter](https://github.com/scrooloose/nerdcommenter) (Add this code snippet to your vimrc file):
 
         let g:NERDCustomDelimiters = {
             \ 'mcproxy': { 'left': '#' }
