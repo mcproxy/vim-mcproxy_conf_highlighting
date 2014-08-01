@@ -10,10 +10,9 @@ Install this plugin with your favorite plugin-manager or manual with the followi
 
 ## Filetype Detection
 *   It must be a **.conf** file
-*   The file detection script looks for the pattern in the file:
+*   The file detection script searches for this pattern in the current file:
     
         'pinstance.*==>'
-
 
 ## Highlighting Sugar
 Highlighting of meta description in comments with the following pattern:
@@ -22,5 +21,12 @@ Highlighting of meta description in comments with the following pattern:
     # ~asdf: other important text
     # ~foo: bar
 
+## Interaction with over Vim-Plugins
+*   [Nerdcommenter](https://github.com/scrooloose/nerdcommenter):
+    Add this code snippet to your vimrc file:
+
+        let g:NERDCustomDelimiters = {
+            \ 'mcproxy': { 'left': '#' }
+            \}
 
 
